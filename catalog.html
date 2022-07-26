@@ -80,8 +80,49 @@
   <section class="catalog-filter">
     <h2 class="visually-hidden">Фильтр товаров каталога</h2>
     <form class="filter-form" action="#" method="get" >
-      <fieldset class="filter-form-list"></fieldset>
+      <fieldset class="filter-form-list">
+        <legend>Стоимость</legend>
+        <div class="rangle-line">
+          <p class="range-toddler-minValue">
+            <button class="range-toddler" type="button"></button>
+            <label>от 0 <input class="range-price-field" type="text" name="filter-price-minValue" value="0"></label>
+          </p>
+          <span class="range-value"></span>
+            <p class="range-toddler-maxValue">
+              <button class="range-toddler" type="button"></button>
+              <label>до 5000 <input class="range-price-field" type="text" name="filter-price-mmaxValue" value="5000"></label>
+            </p>
+        </div>
+      </fieldset>
+      <fieldset class="filter-form-group">
+        <legend>Цвет</legend>
+            <input class="filter-checkbox visually-hidden" type="checkbox" name="black-color" id="black-color" checked>
+						<label class="filter-field-label" for="black-color">Черный</label>
+						<input class="filter-checkbox visually-hidden" type="checkbox" name="white-color" id="white-color" checked>
+						<label class="filter-field-label" for="white-color">Белый</label>
+						<input class="filter-checkbox visually-hidden" type="checkbox" name="blue-color" id="blue-color">
+						<label class="filter-field-label" for="blue-color">Синий</label>
+						<input class="filter-checkbox visually-hidden" type="checkbox" name="red-color" id="red-color">
+						<label class="filter-field-label" for="red-color">Красный</label>
+						<input class="filter-checkbox visually-hidden" type="checkbox" name="pink-color" id="pink-color">
+						<label class="filter-field-label" for="pink-color">Розовый</label>
+      </fieldset>
+      <fieldset class="filter-form-group">
+        <legend>Bluetooth</legend>
+            <input class="filter-radio visually-hidden" type="radio" name="Bluetooth" value="available" id="available" checked>
+						<label class="filter-field-label" for="available">Есть</label>
+						<input class="filter-radio visually-hidden" type="radio" name="Bluetooth" value="not-available" id="not-available">
+						<label class="filter-field-label" for="not-available">Нет</label>
+      </fieldset>
+      <button class="submit-filter-form" type="submit">Показать</button>
     </form>
+  </section>
+  <section class="catalog">
+    <ul class="catalog-list">
+      <li class="catalog-item">
+        <img class="catalog-item-img" src="#" alt="Любительская селфи-палка" width="360" height="380">
+      </li>
+    </ul>
   </section>
 </div>
 
