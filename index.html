@@ -292,5 +292,30 @@
         </div>
       </div>
     </footer>
+    <!-- модальное окно -->
+    <section class="modal-delivery-order">
+      <div class="delivery-order-item">
+        <h2>Доставка под заказ</h2>
+        <button class="close-button" type="reset"><span class="visually-hidden">Закрыть форму</span></button>
+      </div>
+      <form class="contact-form" action="#" method="post">
+        <label class="yourName">Ваше имя:
+          <input class="form-field" type="text" name="name" id="name" placeholder="Введите имя">
+        </label>
+        <label class="yourEmail">Ваш e-mail:
+          <input class="form-field" type="email" name="email" id="email" placeholder="почта">
+          <label class="error-email">Забавный у вас адрес</label>
+        </label>
+        <label class="what-deliver">Что нужно привезти:
+          <textarea class="form-field" name="message" id="message" placeholder="В свободной форме"></textarea>
+        </label>
+        <label class="count-product">Количество:
+          <input class="form-field" type="button" id="button-minus" value="-">
+          <input class="form-field" type="number" step="1" min="1" max="10" id="count-num" value="1">
+          <input class="form-field" type="button" id="button-plus" value="+">
+        </label>
+        <button class="send-button" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
