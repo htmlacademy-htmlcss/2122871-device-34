@@ -11,14 +11,19 @@
         <h1 class="visually-hidden">Магазин гаджетов "DEVICE"</h1>
         <div class="page-header-logo">
           <a>
-            <img src="/images/logo-device.svg" alt="DEVICE" width="164" height="36">
+            <img class="logo-img" src="/images/logo-device.svg" alt="DEVICE" width="164" height="36">
           </a>
         </div>
         <nav class="main-nav">
           <ul class="user-list">
-            <li class="user-item-search">
-              <form  class="user-item-search" method="get" action="https://echo.htmlacademy.ru"></form>
-              Поиск по сайту
+            <li class="user-item user-item-search">
+              <form  class="nav-search" method="get" action="https://echo.htmlacademy.ru">
+                <input class="nav-searchInput" type="search" name="search" id="search" placeholder="Текст поиска">
+                <button class="nav-searchButton" type="submit">Найти</button>
+                <label class="nav-searchLebel" for="search">
+                  <span class="visually-hidden">Поиск</span>
+                </label>
+              </form>
             </li>
             <li class="user-item-login">
               <a class="link-login" href="#">Войти</a>
@@ -44,11 +49,11 @@
             <li class="nav-item-delivery">
               <a class="link-delivery" href="#" >Доставка</a>
             </li>
-            <li class="nav-item-warranty">
-              <a class="link-warranty" href="#" >Гарантия</a>
+            <li class="nav-item-delivery">
+              <a class="link-delivery" href="#" >Гарантия</a>
             </li>
-            <li class="nav-item-contacts">
-              <a class="link-contacts" href="#" >Контакты</a>
+            <li class="nav-item-delivery">
+              <a class="link-delivery" href="#" >Контакты</a>
             </li>
           </ul>
         </nav>
