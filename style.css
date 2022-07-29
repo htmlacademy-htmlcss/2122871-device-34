@@ -41,7 +41,7 @@ body {
 }
 .user-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -61,46 +61,131 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
+  width: 440px;
 
 }
 .nav-searchInput {
-  position: relative;
   width: 320px;
   height: 30px;
-  margin-left: 10px;
-  padding: 0;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  color: #000;
+  padding-left: 30px;
   background-color: transparent;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-
+  border-radius: 20px 0 0 20px;
 }
 .nav-searchButton {
-  position: absolute;
-  top: -10px;
-  left: 330px;
-  z-index: -1;
-  width: 85px;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  background: 0 0;
+  width: 30%;
   background-color: transparent;
-  border: 2px solid #000;
-  cursor: pointer;
-  opacity: 0;
+  border-radius: 0 20px 20px 0;
+
 }
 .nav-searchLebel {
   position: absolute;
   top: 8px;
-  left: -24px;
+  left: 10px;
   width: 20px;
   height: 20px;
-  background-image: url(//images/)
-
+  background-image: url(images/search.png);
+  background-repeat: no-repeat;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid black;
+  clip: rect(0 0 0 0);
+}
+.user-item-login {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  padding-left: 26px;
+}
+.link-login {
+  text-decoration: none;
+  margin-left: 10px;
+}
+.user-item-pic1 {
+  width: 15px;
+  height: 15px;
+  background-image: url(images/enter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.user-item-compare {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.user-item-pic2 {
+  width: 15px;
+  height: 15px;
+  background-image: url(/images/compare.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.link-compare {
+  text-decoration: none;
+  margin-left: 10px;
+}
+.user-item-cart {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.user-item-pic3 {
+  width: 15px;
+  height: 15px;
+  background-image: url(images/backet.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.link-cart {
+  text-decoration: none;
+  margin-left: 10px;
+}
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid;
+}
+.nav-item-catalog {
+  width: 540px;
+  border: 1px solid;
+}
+.link-catalog {
+  font-weight: 800;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: #000;
+}
+.link-catalog-box {
+  position: absolute;
+  margin-left: 243px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid;
+  border-radius: 50px;
+  opacity: 0.3;
+}
+.link-catalog-box::before {
+  content: "+";
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  opacity: 0.3;
 }
