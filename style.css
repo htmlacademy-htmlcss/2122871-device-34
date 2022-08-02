@@ -212,15 +212,6 @@ body {
   position: relative;
   z-index: 1;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-
-}
 .promo-slider-item-1 {
   display: flex;
   position: relative;
@@ -228,10 +219,10 @@ body {
   padding-bottom: 97px;
 }
 .slider-item-img {
-  margin-top: -75px;
+  margin-top: -50px;
 }
 .slider-item-description {
-  padding-top: 45px;
+  padding-top: 75px;
   padding-left: 30px;
 }
 .slider-item-description b {
@@ -254,7 +245,7 @@ body {
   width: 247px;
   margin-top: 42px;
   margin-bottom: 46px;
-  margin-left: 2px;
+
 }
 .btn-description {
   position: relative;
@@ -285,6 +276,17 @@ body {
   background-color: #f0c52e;
 
 }
+.btn-slider-input {
+  display: flex;
+  justify-content: space-between;
+}
+.slider-circle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
 .slider-item-advantages {
   display: flex;
   flex-direction: row;
@@ -311,4 +313,57 @@ color: #000;
   font-size: 36px;
   line-height: 30px;
   color: #000;
+}
+.catalog-categories {
+  padding-top: 20px;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+}
+.categories-list-item {
+  width: 160px;
+  height: 253px;
+  box-sizing: inherit;
+  list-style-type: none;
+}
+.list-item-link {
+  text-decoration: none;
+}
+.item-wrap-vr {
+  padding: 52px 32px 53px 31px;
+  background-color: rgba(240,197,46,.5);
+}
+.item-wrap-name {
+  width: 160px;
+  margin: 0;
+  padding-top: 33px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+}
+.item-wrap-selfie {
+  padding: 41px 36px 2px 38px;
+  background-color: rgba(240,197,46,.5);
+}
+.item-wrap-cam {
+  padding: 38px 40px 35px 49px;
+  background-color: rgba(240,197,46,.5);
+}
+.item-wrap-fit {
+  padding: 50px 25px 45px 28px;
+  background-color: rgba(240,197,46,.5);
+}
+.item-wrap-watch {
+  padding: 32px 49px 30px 55px;
+  background-color: rgba(240,197,46,.5);
+}
+.item-wrap-copter {
+  padding: 49px 15px 42px 13px;
+  background-color: rgba(240,197,46,.5);
 }
